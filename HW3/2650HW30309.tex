@@ -1,0 +1,146 @@
+\documentclass{article}
+
+\usepackage{amsmath} 
+\usepackage{float}
+\usepackage{graphicx}
+
+\title{PHY2650 HW3}
+\author{Chen Yilun(123090048)}
+
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Q1}
+\subsection{(a)}
+
+\textbf{Results:}
+\begin{tabular}{rl}
+0 & : 0.0, \\
+0.1 & : 0.09966766429033642, \\
+0.2 & : 0.19736503092637106, \\
+0.3 & : 0.29123788265696554, \\
+0.4 & : 0.3796528397004763, \\
+0.5 & : 0.46128100641279307, \\
+0.6 & : 0.5351535268080815, \\
+0.7 & : 0.6006856680827494, \\
+0.8 & : 0.6576698563284026, \\
+0.9 & : 0.7062415149635489, \\
+1.0 & : 0.746824132812436, \\
+1.1 & : 0.7800614325765766, \\
+1.2 & : 0.8067447581231203, \\
+1.3 & : 0.8277429893931986, \\
+1.4 & : 0.8439407138416479, \\
+1.5 & : 0.8561883936248748, \\
+1.6 & : 0.8652662259422558, \\
+1.7 & : 0.871861593406611, \\
+1.8 & : 0.8765586342591011, \\
+1.9 & : 0.8798376097200239, \\
+2.0 & : 0.8820813907623578, \\
+2.1 & : 0.8835864418783616, \\
+2.2 & : 0.8845760209054464, \\
+2.3 & : 0.8852138115715777, \\
+2.4 & : 0.8856167458989558, \\
+2.5 & : 0.88586627361749, \\
+2.6 & : 0.8860177453974631, \\
+2.7 & : 0.8861078761616262, \\
+2.8 & : 0.886160446739861, \\
+2.9 & : 0.886190503406593, \\
+3.0 & : 0.8862073482595122
+\end{tabular}
+
+\subsection{(b)Plot}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{2650HW3/HW3Q1b.png}
+    \caption{Plot of E(x) vs x}
+    \label{fig:enter-label}
+\end{figure}
+
+
+\section{Q2}
+\subsection{Results:}
+Estimated error: 0.026633333333333137\\
+Real error: 0.10655999999999999
+
+
+\subsection{Analysis}
+
+$I_{1}$ with 10 slices gives $E(1) = 4.50656$ which is not a good estimation for the real value 4.4, and it may be due to the insufficient number of slices. Hence the true error does not agree perfectly with the estimated one when using the value of $I_{1}$.
+
+
+\section{Q3}
+\subsection{Output}
+\textbf{Results: To achieve the accuracy of $\epsilon < 10 ^ {-4}$ }
+
+(1)Number of intervals for \textbf{left-hand rectangle rule}: 4194304
+
+\textbf{(Estimateing the error by comparing with the result 
+from the trapezoidal rule)}
+
+Integral using \textbf{left-hand rectangle rule}: 0.5672623414436723
+
+(2)Number of intervals for \textbf{adaptive trapezoidal rule}: 2097152
+
+Integral using adaptive \textbf{adaptive trapezoidal rule}: 0.5672622052304107
+
+(3)Number of intervals for \textbf{adaptive Simpson's rule}: 65536
+
+Integral using \textbf{adaptive Simpson's rule}: 0.564498512178105
+
+(4)As for the \textbf{Romberg method:}
+
+Iteration:     1, I =   -0.267060634995734, error estimate = 0.304259196878092
+
+Iteration:     2, I =   -0.041404061118524, error estimate = 0.301721373096733
+
+Iteration:     2, I =   -0.026360289526710, error estimate = 0.240700345469024
+
+Iteration:     3, I =    0.130079387755442, error estimate = 0.246913792148150
+
+Iteration:     3, I =    0.141511617680373, error estimate = 0.182915678798897
+
+......
+
+Iteration:    24, I =    0.567679056654760, error estimate = 0.000122695129418
+
+Iteration:    25, I =    0.567757971398380, error estimate = 0.000139234347817
+
+Iteration:    25, I =    0.567763971903305, error estimate = 0.000096008078806
+
+There are totally 25 Iterations, $2^{25}$ slices.
+
+Integral using \textbf{Romberg method:} 0.5677639719033053
+
+\subsection{Plot}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{2650HW3/Q3LFRRRR.png} % 需要替换为实际的图片文件名
+    \caption{}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{2650HW3/Q3TPZ.png} % 需要替换为实际的图片文件名
+    \caption{}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{2650HW3/Q3SPS.png} % 需要替换为实际的图片文件名
+    \caption{}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{2650HW3/Q3Romberg.png} % 需要替换为实际的图片文件名
+    \caption{}
+\end{figure}
+
+\end{document}
+
+

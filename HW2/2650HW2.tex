@@ -1,0 +1,155 @@
+\documentclass{article}
+
+
+\usepackage{geometry}
+\geometry{
+    textwidth=15cm,  % 增加文本区域的宽度
+    margin=2.5cm    % 调整页边距
+}
+
+
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{epstopdf}
+\graphicspath{ {images/} }
+
+
+\title{PHY2650 Homework2}
+\author{Chen Yilun(123090048)}
+
+
+\begin{document}
+
+\maketitle
+
+
+All codes please refer to the attached python files.
+
+
+
+\section{Q1}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{images/Q1.jpg}
+    \caption{}
+    \label{}
+\end{figure}
+
+\section{Q2}
+\subsection{(a)}
+The first derivative is
+\[
+f^\prime(x)=\frac{x\sin(x)-2(1 - \cos(x))}{x^{3}}
+\]
+The second derivative is
+\[
+f^{\prime\prime}(x)=\frac{x^{2}\cos(x)-4x\sin(x)+6 - 6\cos(x)}{x^{4}}
+\]
+Hence
+\[f^{\prime\prime}(0.004)=-0.0834375(CASIOfx991)
+\]
+
+\subsection{(b)(c)}
+\subsubsection{Code}
+Please refer to the attached python files.
+
+
+
+
+\subsubsection{Plot(Figure 2 and Figure 3)}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=7cm]{images/Q2-1.png}
+    \caption{log of error vs. log of step h}
+    \label{log of error vs. log of step h}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=7cm]{images/Q2-2.png}
+    \caption{log of error vs. log of step h (rewritten version)}
+    \label{log of error vs. log of step h (rewritten version)}
+\end{figure}
+
+
+
+
+\section{Q3}
+\subsection{(a)(Refer to figure 4 above)}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{images/Q3.jpg}
+    \caption{}
+    \label{}
+\end{figure}
+
+\subsection{(b)}
+
+\subsubsection{Code}
+Please refer to the attached python files.
+
+\subsubsection{Plot(Figure5)}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=7cm]{images/Q3.png}
+    \caption{log of error vs. log of step h}
+    \label{log of error vs. log of step h}
+\end{figure}
+
+
+\section{Q4}
+\subsection{Code}
+Please refer to the attached python files.
+
+\subsection{Plot(Figure 6 - 11)}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{images/Q4C01.png}
+    \caption{Error vs h for f(x) = cos(x) at x = 0.1 ↑}
+    \label{}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{images/Q4C1.png}
+    \caption{Error vs h for f(x) = cos(x) at x = 1 ↑}
+    \label{}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{images/Q4C100.png}
+    \caption{Error vs h for f(x) = cos(x) at x = 100 ↑}
+    \label{}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{images/Q4E0.1.png}
+    \caption{Error vs h for f(x) = exp(x) at x = 0.1 ↑}
+    \label{}
+\end{figure}
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{images/Q4E1.png}
+    \caption{Error vs h for f(x) = exp(x) at x = 1 ↑}
+    \label{}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{images/Q4E100.png}
+    \caption{Error vs h for f(x) = exp(x) at x = 100 ↑}
+    \label{}
+\end{figure}
+
+
+
+
+\end{document}
